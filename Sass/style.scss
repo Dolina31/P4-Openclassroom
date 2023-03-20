@@ -1,5 +1,55 @@
-h1 {
-    font-family: "Shrikhand", cursive;
+@import "_placeholder.scss";
+@import "_mixins.scss";
+
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+}
+.header__logo {
+    @extend %flex-center;
+    padding: 15px;
+
+    & img {
+        height: 33px;
+        width: 180px;
+    }
+}
+.header__location {
+    height: 55px;    
+    @extend %flex-center;
+    background-color: #EAEAEA;
+    gap: 15px;
+    padding-right: 15px;
+    box-shadow: inset 0px 9px 6px -8px rgb(179, 179, 179);
+
+    i {
+        color: #353535;
+    }
+}
+.menu {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
+    padding: 40px 50px 40px 50px;
+    gap: 20px;
+    @extend %background-grey;
+
+    & p {
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    & .menu__button {
+        color: white;
+        font-weight: 500;
+        background: linear-gradient(#FF79DA,#9356DC);
+        @extend %box-shadow;
+        border-radius: 25px;
+        border: none;
+        padding: 18px;
+    }
 }
