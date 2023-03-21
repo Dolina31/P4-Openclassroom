@@ -44,14 +44,15 @@ body {
   padding-top: 40px;
   padding-bottom: 80px;
   gap: 20px;
-  background-color: #F6F6F6;
+  background-color: #f8f8f8;
 }
 .menu p {
   font-weight: 300;
   font-size: 1em;
   margin-bottom: 15px;
 }
-.menu .menu__button {
+.menu .menu__btn {
+  width: 70%;
   color: white;
   font-size: 1em;
   font-weight: 500;
@@ -61,8 +62,44 @@ body {
   border: none;
   padding: 18px;
 }
-.menu .menu__button:hover {
-  box-shadow: 0px 4px 13px 4px rgb(180, 180, 180);
+.menu .menu__btn:hover {
+  box-shadow: 0px 4px 13px 6px rgb(180, 180, 180);
+  opacity: 0.8;
+}
+
+.fonctionnement {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.fonctionnement h3 {
+  padding: 15px 0px 20px 15px;
+  font-size: 1.5em;
+}
+.fonctionnement .fonctionnement__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 30px;
+}
+
+.fonctionnement__btn__container {
+  width: 90%;
+  border: none;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 4px 10px 1px rgb(180, 180, 180);
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.fonctionnement__btn__container:hover {
+  box-shadow: 0px 4px 13px 6px rgb(180, 180, 180);
+  background-color: #F5EDFF;
+}
+.fonctionnement__btn__container i {
+  color: #7E7E7E;
 }
 
 /*# sourceMappingURL=style.css.map */
