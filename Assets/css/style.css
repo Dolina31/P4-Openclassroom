@@ -1,27 +1,17 @@
-.menu {
-  background-color: #F6F6F6;
-}
-
-.header__location, .header__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu .menu__button {
-  box-shadow: 0px 0px 8px 3px rgb(228, 225, 225);
-}
-
 * {
   margin: 0;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 .header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 15px;
 }
 .header__logo img {
@@ -30,11 +20,15 @@ body {
 }
 
 .header__location {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
   height: 55px;
   background-color: #EAEAEA;
   gap: 15px;
   padding-right: 15px;
-  box-shadow: inset 0px 9px 6px -8px rgb(179, 179, 179);
+  box-shadow: inset 0px 9px 6px -8px rgb(194, 193, 193);
 }
 .header__location i {
   color: #353535;
@@ -44,21 +38,31 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 40px 50px 40px 50px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 80px;
   gap: 20px;
+  background-color: #F6F6F6;
 }
 .menu p {
   font-weight: 300;
+  font-size: 1em;
   margin-bottom: 15px;
 }
 .menu .menu__button {
   color: white;
+  font-size: 1em;
   font-weight: 500;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 25px;
+  background: linear-gradient(175deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  box-shadow: 0px 4px 10px 1px rgb(180, 180, 180);
+  border-radius: 40px;
   border: none;
   padding: 18px;
+}
+.menu .menu__button:hover {
+  box-shadow: 0px 4px 13px 4px rgb(180, 180, 180);
 }
 
 /*# sourceMappingURL=style.css.map */
