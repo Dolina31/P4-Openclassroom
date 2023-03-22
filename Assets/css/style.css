@@ -6,6 +6,14 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
 }
+body h3 {
+  padding: 15px 0px 15px 15px;
+  font-size: 1.4em;
+}
+
+a {
+  text-decoration: none;
+}
 
 .header__logo {
   display: flex;
@@ -42,7 +50,7 @@ body {
   text-align: center;
   margin: auto;
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
   gap: 20px;
   background-color: #f8f8f8;
 }
@@ -70,12 +78,8 @@ body {
 }
 
 .fonctionnement {
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 50px;
-}
-.fonctionnement h3 {
-  padding: 10px 0px 20px 15px;
-  font-size: 1.4em;
 }
 .fonctionnement .fonctionnement__btn {
   display: flex;
@@ -91,7 +95,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
 }
 .fonctionnement .fonctionnement__btn .fonctionnement__btn__number {
   border-radius: 50%;
@@ -118,7 +121,6 @@ body {
   padding: 30px;
   background-color: #f8f8f8;
   box-shadow: 0px 4px 8px 4px rgb(235, 231, 231);
-  text-decoration: none;
   width: 90%;
   font-size: 0.9em;
   font-weight: 600;
@@ -135,6 +137,81 @@ body {
 }
 .fonctionnement__btn__container:hover i {
   color: #9356DC;
+}
+
+.restaurants {
+  background-color: #f8f8f8;
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+.restaurants .restaurants__position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 15px;
+}
+
+.restaurants__card {
+  box-shadow: 0px 4px 10px 5px rgb(230, 230, 230);
+  width: 90%;
+  border-radius: 15px;
+}
+.restaurants__card img {
+  width: 100%;
+  aspect-ratio: 6/3;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurants__card h4 {
+  font-size: 1.1em;
+}
+.restaurants__card p {
+  font-weight: 300;
+}
+.restaurants__card .restaurants__card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  padding-left: 15px;
+}
+.restaurants__card i {
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px 0px 40px 30px;
+}
+footer p {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__list {
+  font-weight: 400;
+  gap: 10px;
+}
+.footer__list .footer__list__partners {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__list .footer__list__partners i {
+  font-size: 0.8em;
+  padding-right: 10px;
+}
+.footer__list .footer__list__info {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

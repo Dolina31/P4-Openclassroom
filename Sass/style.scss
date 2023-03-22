@@ -8,6 +8,13 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
+    h3 {
+        padding: 15px 0px 15px 15px;
+        font-size: 1.4em;
+    }
+}
+a {
+    text-decoration: none
 }
 .header__logo {
     @include flex-position (row, center, center);
@@ -35,7 +42,7 @@ body {
     text-align: center;
     margin: auto;
     padding-top: 40px;
-    padding-bottom: 80px; 
+    padding-bottom: 60px; 
     gap: 20px;
     background-color: $background-color-clear;
 
@@ -67,14 +74,8 @@ body {
     }
 }
 .fonctionnement {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 50px;
-
-    h3 {
-        padding: 10px 0px 20px 15px;
-        font-size: 1.4em;
-    }
-
     .fonctionnement__btn {
         @include flex-position (column, center, center); 
         padding: 15px;
@@ -83,7 +84,6 @@ body {
         a {
             width: 100%;
             @include flex-position (column, center, center);
-            text-decoration: none
         }
         .fonctionnement__btn__number {
             border-radius: 50%;
@@ -104,7 +104,6 @@ body {
     @include flex-position(null, flex-start, center);
     @include btn-form ($background-color-clear);
     @include box-shadow (0px, 4px, 8px, 4px, rgb(235, 231, 231));
-    text-decoration: none;
     width: 90%;
     font-size: 0.9em;
     font-weight: 600;
@@ -125,5 +124,82 @@ body {
             }
     }
 }
+
+.restaurants {
+    background-color: $background-color-clear;
+    padding-top: 50px;
+    padding-bottom: 70px;
     
-           
+    .restaurants__position {
+        @include flex-position (column, center, center);
+        gap: 40px;
+        padding-top: 15px;
+    }
+}
+
+.restaurants__card {
+        @include box-shadow(0px, 4px, 10px, 5px, rgb(230, 230, 230));
+        width: 90%;
+        border-radius: 15px;
+
+
+        img {
+            width: 100%;
+            aspect-ratio: 6/3;
+            object-fit: cover;
+            border-radius: 15px 15px 0  0;
+        }
+        h4 {
+            font-size: 1.1em;
+        }
+        p {
+            font-weight: 300;
+        }
+        .restaurants__card__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            color: black;
+            padding-left: 15px;
+        }
+        i {
+            font-weight: 100;
+            font-size: 1.5em;
+        }
+    }
+footer {
+    background-color: #353535;
+    color: white;
+    padding: 20px 0px 40px 30px;
+    p {
+        font-family:'Shrikhand', cursive;
+        font-size: 1.1em;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+    .footer__list {
+        font-weight: 400;
+        gap: 10px;
+       
+
+        .footer__list__partners {
+            @include flex-position (column, null, null);
+            gap: 10px;
+
+            i {
+                font-size: 0.8em;
+                padding-right: 10px;
+            }
+        }
+
+        .footer__list__info {
+            @include flex-position (column, null, null);
+            font-weight: 300;
+            gap: 10px;
+        }
+    }  
+
+
+    
