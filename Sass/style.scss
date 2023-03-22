@@ -10,7 +10,7 @@ body {
     font-size: 1.2em;
 }
 .header__logo {
-    @include flex-center (row);
+    @include flex-position (row, center, center);
     padding: 15px;
 
     img {
@@ -19,7 +19,7 @@ body {
     }
 }
 .header__location { 
-    @include flex-center (none);
+    @include flex-position (row, center, center);
     height: 55px;    
     background-color: #EAEAEA;
     gap: 15px;
@@ -31,7 +31,7 @@ body {
     }
 }
 .menu {
-    @include flex-center (column);
+    @include flex-position (column, center, center);
     text-align: center;
     margin: auto;
     padding-top: 40px;
@@ -46,15 +46,19 @@ body {
     }
 
     .menu__btn {
-        width: 70%;
         color: white;
         font-size: $police-size;
         font-weight: 500;
         background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-        @include box-shadow(0px, 4px, 10px, 1px, rgb(180, 180, 180));
+        padding: 18px;
         border-radius: 40px;
         border: none;
-        padding: 18px;
+        @include box-shadow(0px, 4px, 10px, 1px, rgb(180, 180, 180));
+        
+        
+        a {
+            width: 70%;
+        }
 
         &:hover {
             @include box-shadow(0px, 4px, 13px, 6px, rgb(180, 180, 180));
@@ -67,30 +71,59 @@ body {
     padding-bottom: 50px;
 
     h3 {
-        padding: 15px 0px 20px 15px;
-        font-size: 1.5em;
+        padding: 10px 0px 20px 15px;
+        font-size: 1.4em;
     }
 
     .fonctionnement__btn {
-        @include flex-center (column); 
+        @include flex-position (column, center, center); 
         padding: 15px;
-        gap: 30px;
-    }
-    
+        gap: 35px;
+
+        a {
+            width: 100%;
+            @include flex-position (column, center, center);
+            text-decoration: none
+        }
+        .fonctionnement__btn__number {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            border: none;
+            position: absolute;
+            left: 20px; 
+            @include flex-position (null,center, center);
+            background-color: #9356DC;
+            color: white;
+            font-weight: 400;
+            font-size: 0.9em;
+        }
+    } 
 }
 .fonctionnement__btn__container {
-    width: 90%;
+    @include flex-position(null, flex-start, center);
     @include btn-form ($background-color-clear);
-    @include box-shadow (0px, 4px, 10px, 1px, rgb(180, 180, 180));
+    @include box-shadow (0px, 4px, 8px, 4px, rgb(235, 231, 231));
+    text-decoration: none;
+    width: 90%;
     font-size: 0.9em;
     font-weight: 600;
-        &:hover {
-            @include box-shadow(0px, 4px, 13px, 6px, rgb(180, 180, 180));
-            background-color: #F5EDFF;
-        }
     
     i {
         color: #7E7E7E;
+        font-size: 1.4em;
+        padding-right: 20px;
+        padding-left: 5px;
+    }
+
+    &:hover {
+        @include box-shadow(0px, 5px, 15px, 7px, rgb(223, 223, 223));
+        background-color: #F5EDFF;
+
+        i {
+            color: #9356DC;
+            }
     }
 }
+    
            

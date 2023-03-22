@@ -1,15 +1,15 @@
-@mixin flex-center ($direction) {
+@mixin flex-position ($direction, $justify-content, $align-items) {
     display: flex;
     flex-direction: $direction;
-    justify-content: center;
-    align-items: center;
+    justify-content: $justify-content;
+    align-items: $align-items;
 }
 @mixin box-shadow ($x, $y, $blur, $spread, $color) {
     box-shadow: $x $y $blur $spread $color;
   }
 @mixin btn-form ($background-color-clear) {
     border: none;
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 30px;
     background-color: $background-color-clear; 
 }
