@@ -1,0 +1,38 @@
+footer {
+    background-color: var(--bg-color-dark);
+    color: white;
+    padding: 20px 0px 40px 30px;
+
+    a {
+        color: white;
+    }
+
+    p {
+        font-family:'Shrikhand', cursive;
+        font-size: 1.1em;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.footer__list {
+    @include flex-position (column, null, null);
+    gap: 10px;
+    text-decoration: none;
+
+    .footer__list__join-us {  
+
+        i {
+            padding-right: 15px;
+            font-size: 0.9em;
+        }  
+        .handshake-icon-width {
+            width: 15px;
+            padding-right: 15px;
+        }
+    }
+    .footer__list__info {
+        font-weight: 300;
+
+    }
+}     
