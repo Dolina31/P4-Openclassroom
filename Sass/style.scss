@@ -38,13 +38,13 @@ a {
     }
 }
 .menu {
-    @include flex-position (column, center, center);
+    @include flex-position (column, null, null);
     text-align: center;
     margin: auto;
     padding-top: 40px;
     padding-bottom: 60px; 
     gap: 20px;
-    background-color: $background-color-clear;
+    background-color: var(--bg-color-clear);
 
     p {
         font-weight: 300;
@@ -55,7 +55,6 @@ a {
     .menu__btn {
         color: white;
         font-size: $police-size;
-        font-weight: 500;
         background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
         padding: 18px;
         border-radius: 40px;
@@ -102,7 +101,7 @@ a {
 }
 .fonctionnement__btn__container {
     @include flex-position(null, flex-start, center);
-    @include btn-form ($background-color-clear);
+    @include btn-form;
     @include box-shadow (0px, 4px, 8px, 4px, rgb(235, 231, 231));
     width: 90%;
     font-size: 0.9em;
@@ -126,12 +125,12 @@ a {
 }
 
 .restaurants {
-    background-color: $background-color-clear;
+    background-color: var(--bg-color-clear);
     padding-top: 50px;
     padding-bottom: 70px;
     
     .restaurants__position {
-        @include flex-position (column, center, center);
+        @include flex-position (column, null, center);
         gap: 40px;
         padding-top: 15px;
     }
@@ -142,36 +141,47 @@ a {
         width: 90%;
         border-radius: 15px;
 
-
         img {
             width: 100%;
             aspect-ratio: 6/3;
             object-fit: cover;
             border-radius: 15px 15px 0  0;
         }
+
         h4 {
             font-size: 1.1em;
+            padding-bottom: 5px;
         }
+
         p {
             font-weight: 300;
-        }
-        .restaurants__card__container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
 
-            color: black;
-            padding-left: 15px;
         }
+
+        .restaurants__card__container {
+            color: black;
+            padding: 15px;
+            @include flex-position (row, space-between, null);
+            
+            .restaurants__card__container__icon {
+                padding: 7px 22px 0px 22px;
+            }
+        }
+        
         i {
-            font-weight: 100;
             font-size: 1.5em;
         }
     }
+
 footer {
-    background-color: #353535;
+    background-color: var(--bg-color-dark);
     color: white;
     padding: 20px 0px 40px 30px;
+
+    a {
+        color: white;
+    }
+
     p {
         font-family:'Shrikhand', cursive;
         font-size: 1.1em;
@@ -179,27 +189,27 @@ footer {
         padding-bottom: 20px;
     }
 }
-    .footer__list {
-        font-weight: 400;
-        gap: 10px;
-       
 
-        .footer__list__partners {
-            @include flex-position (column, null, null);
-            gap: 10px;
+.footer__list {
+    @include flex-position (column, null, null);
+    gap: 10px;
+    text-decoration: none;
 
-            i {
-                font-size: 0.8em;
-                padding-right: 10px;
-            }
+    .footer__list__join-us {  
+
+        i {
+            padding-right: 15px;
+            font-size: 0.9em;
+        }  
+        .handshake-icon-width {
+            width: 15px;
+            padding-right: 15px;
         }
+    }
+    .footer__list__info {
+        font-weight: 300;
 
-        .footer__list__info {
-            @include flex-position (column, null, null);
-            font-weight: 300;
-            gap: 10px;
-        }
-    }  
-
+    }
+}     
 
     

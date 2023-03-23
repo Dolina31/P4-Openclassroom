@@ -7,10 +7,10 @@
 @mixin box-shadow ($x, $y, $blur, $spread, $color) {
     box-shadow: $x $y $blur $spread $color;
   }
-@mixin btn-form ($background-color-clear) {
+@mixin btn-form {
     border: none;
     border-radius: 25px;
     padding: 30px;
-    background-color: $background-color-clear; 
+    background-color: var(--bg-color-clear);
 }
 
