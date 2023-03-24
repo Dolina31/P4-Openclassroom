@@ -1,0 +1,2 @@
+- Modifier le fleche retour de la page menu pour qu'il y ai pas de décalage au :hover
+- Rajouter la carré "Nouveau" sur la page d'accueil

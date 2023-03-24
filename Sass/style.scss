@@ -1,29 +1,10 @@
 @import "../Sass/Utils/mixins";
 @import "../Sass/Utils/variables";
 @import "../Sass/Layouts/footer";
-* {
-    margin: 0;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-    h3 {
-        padding: 15px 0px 15px 15px;
-        font-size: 1.4em;
-    }
-}
-a {
-    text-decoration: none
-}
-.header__logo {
-    @include flex-position (row, center, center);
-    padding: 15px;
+@import "../Sass/Layouts/header";
+@import "../Sass/Components/Button";
+@import "../Sass/Base/Base";
 
-    img {
-        height: 33px;
-        width: 180px;
-    }
-}
 .header__location { 
     @include flex-position (row, center, center);
     height: 55px;    
@@ -36,7 +17,7 @@ a {
         color: #353535;
     }
 }
-.menu {
+.presentation {
     @include flex-position (column, null, null);
     text-align: center;
     margin: auto;
@@ -50,38 +31,19 @@ a {
         font-size: $police-size;
         margin-bottom: 15px;
     }
-
-    .menu__btn {
-        color: white;
-        font-size: $police-size;
-        background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-        padding: 18px;
-        border-radius: 40px;
-        border: none;
-        @include box-shadow(0px, 4px, 10px, 1px, rgb(180, 180, 180));
-        
-        
-        a {
-            width: 70%;
-        }
-
-        &:hover {
-            @include box-shadow(0px, 4px, 13px, 6px, rgb(180, 180, 180));
-            opacity: 0.8;
-        }
-    }
 }
 .fonctionnement {
     padding-top: 40px;
     padding-bottom: 50px;
+
     .fonctionnement__btn {
-        @include flex-position (column, center, center); 
-        padding: 15px;
-        gap: 35px;
+    @include flex-position (column, center, center); 
+    padding: 15px;
+    gap: 35px;
 
         a {
             width: 100%;
-            @include flex-position (column, center, center);
+            @include flex-position (null, center, center);
         }
         .fonctionnement__btn__number {
             border-radius: 50%;
@@ -171,5 +133,3 @@ a {
             font-size: 1.5em;
         }
     }
-
-    
