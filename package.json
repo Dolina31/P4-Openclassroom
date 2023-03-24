@@ -4,7 +4,8 @@
   "description": "Projet Ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./Sass/style.scss:./Assets/css/style.css"
+    "sass": "sass --watch ./Sass/style.scss:./Assets/css/style.css ./Sass/page-menu.scss:./Assets/css/page-menu.css"
+
   },
   "author": "",
   "license": "ISC"

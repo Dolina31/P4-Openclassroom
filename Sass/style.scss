@@ -1,8 +1,6 @@
-@import "_placeholder.scss";
-@import "_mixins.scss";
-@import "_variables.scss";
-
-
+@import "../Sass/Utils/mixins";
+@import "../Sass/Utils/variables";
+@import "../Sass/Layouts/footer";
 * {
     margin: 0;
 }
@@ -173,5 +171,5 @@ a {
             font-size: 1.5em;
         }
     }
-@import"_footer.scss";
+
     

@@ -1,0 +1,9 @@
+.header__logo {
+    @include flex-position (row, center, center);
+    padding: 15px;
+
+    img {
+        height: 33px;
+        width: 180px;
+    }
+}

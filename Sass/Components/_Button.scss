@@ -1,0 +1,19 @@
+.btn-cta {
+    color: white;
+    font-size: $police-size;
+    background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    padding: 18px;
+    border-radius: 40px;
+    border: none;
+    @include box-shadow(0px, 4px, 10px, 1px, rgb(180, 180, 180));
+    
+    
+    a {
+        width: 70%;
+    }
+
+    &:hover {
+        @include box-shadow(0px, 4px, 13px, 6px, rgb(180, 180, 180));
+        opacity: 0.8;
+    }
+}
