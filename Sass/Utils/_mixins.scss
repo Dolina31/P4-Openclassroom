@@ -4,9 +4,6 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
-@mixin box-shadow ($x, $y, $blur, $spread, $color) {
-    box-shadow: $x $y $blur $spread $color;
-  }
 @mixin btn-form {
     border: none;
     border-radius: 25px;

@@ -1,2 +1,10 @@
-- Modifier le fleche retour de la page menu pour qu'il y ai pas de décalage au :hover
+ACCUEIL :
 - Rajouter la carré "Nouveau" sur la page d'accueil
+
+
+PAGE MENU :
+- Modifier les boutons des Menus pour que le texte rentre ou se transforme en ... (enlever le text-align)
+- Chercher pourquoi la police d'écriture dans les boutons en font-weight 300 n'a pas la même apparence que celle de l'accueil
+- Mettre le menu qui s'affiche sur l'image 
+- Modifier la position du coeur pour que le titre reste sur une seul ligne mais que l'espace avec le coeur soit toujours correct
+- Faire un form fonctionnel
