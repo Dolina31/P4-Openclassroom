@@ -3,9 +3,5 @@ ACCUEIL :
 
 
 PAGE MENU :
-- Trouver pourquoi le text-overflow: ellipsis; ne fonctionne pas
 - Chercher pourquoi la police d'écriture dans les boutons en font-weight 300 n'a pas la même apparence que celle de l'accueil
-- Mettre le menu qui s'affiche sur l'image 
-- Modifier la position du coeur pour que le titre reste sur une seul ligne mais que l'espace avec le coeur soit toujours correct
-- Hearder fonctionnel qu'a partir de 425px voir si c'est ok pour le responsive 
-- Faire un form fonctionnel 
+-
