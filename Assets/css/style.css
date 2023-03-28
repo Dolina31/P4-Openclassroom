@@ -2,6 +2,7 @@
   --primary-color: #9356DC;
   --secondary-color: #FF79DA;
   --tertiary-color: #99E2D0;
+  --text-new-color: #008766;
   --bg-color-clear: #f8f8f8;
   --bg-color-dark: #353535;
 }
@@ -55,6 +56,7 @@ footer p {
   --primary-color: #9356DC;
   --secondary-color: #FF79DA;
   --tertiary-color: #99E2D0;
+  --text-new-color: #008766;
   --bg-color-clear: #f8f8f8;
   --bg-color-dark: #353535;
 }
@@ -125,14 +127,13 @@ footer p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 30px;
-  padding-left: 35px;
 }
 .header__menu__position .arrow-icon {
   font-size: 1.2em;
   color: black;
   border-radius: 50%;
   padding: 7px 12px 7px 12px;
+  margin-left: 13px;
 }
 .header__menu__position .arrow-icon:hover {
   color: var(--primary-color);
@@ -140,6 +141,9 @@ footer p {
   border: 2px solid transparent;
   padding: 5px 10px 5px 10px;
   box-shadow: 0px 4px 8px 4px rgb(235, 231, 231);
+}
+.header__menu__position .header__logo {
+  width: 60%;
 }
 
 .menu__img__size {
@@ -149,13 +153,13 @@ footer p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
 }
 
 .section__menu {
   background-color: var(--bg-color-clear);
   border-radius: 45px 45px 0 0;
   padding-top: 40px;
+  margin-top: -44px;
 }
 .section__menu h1 {
   font-family: "Shrikhand", cursive;
@@ -189,7 +193,7 @@ footer p {
   padding-bottom: 20px;
 }
 .section__menu .section__menu__Name-heart i {
-  padding-left: 27px;
+  padding-left: 20px;
   font-size: 1.8em;
 }
 
@@ -208,6 +212,9 @@ footer p {
   padding: 15px;
   background-color: white;
   box-shadow: 0px 0px 8px 4px rgb(235, 231, 231);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .btn-position .section__menu__btn:hover {
   box-shadow: 0px 0px 9px 6px rgb(219, 217, 217);
@@ -288,21 +295,6 @@ footer p {
   justify-content: center;
   align-items: center;
 }
-.fonctionnement .fonctionnement__btn .fonctionnement__btn__number {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  border: none;
-  position: absolute;
-  left: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #9356DC;
-  color: white;
-  font-weight: 400;
-  font-size: 0.9em;
-}
 
 .fonctionnement__btn__container {
   display: flex;
@@ -316,6 +308,22 @@ footer p {
   width: 90%;
   font-size: 0.9em;
   font-weight: 600;
+  position: relative;
+}
+.fonctionnement__btn__container .fonctionnement__btn__number {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  position: absolute;
+  left: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  color: white;
+  font-weight: 400;
+  font-size: 0.9em;
 }
 .fonctionnement__btn__container i {
   color: #7E7E7E;
@@ -348,6 +356,7 @@ footer p {
   box-shadow: 0px 4px 10px 5px rgb(230, 230, 230);
   width: 90%;
   border-radius: 15px;
+  position: relative;
 }
 .restaurants__card img {
   width: 100%;
@@ -361,6 +370,22 @@ footer p {
 }
 .restaurants__card p {
   font-weight: 300;
+}
+.restaurants__card .restaurants__card__new {
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--text-new-color);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 7px 13px 7px 13px;
+  background-color: var(--tertiary-color);
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.restaurants__card .restaurants__card__new:hover {
+  opacity: 92%;
+  box-shadow: 0px 2px 12px 3px var(--tertiary-color);
 }
 .restaurants__card .restaurants__card__container {
   color: black;

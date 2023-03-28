@@ -43,19 +43,7 @@
             width: 100%;
             @include flex-position (null, center, center);
         }
-        .fonctionnement__btn__number {
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            border: none;
-            position: absolute;
-            left: 20px; 
-            @include flex-position (null,center, center);
-            background-color: #9356DC;
-            color: white;
-            font-weight: 400;
-            font-size: 0.9em;
-        }
+  
     } 
 }
 .fonctionnement__btn__container {
@@ -65,7 +53,22 @@
     width: 90%;
     font-size: 0.9em;
     font-weight: 600;
-    
+    position: relative;
+
+    .fonctionnement__btn__number {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    left: -15px; 
+    @include flex-position (null,center, center);
+    background-color: #9356DC;
+    color: white;
+    font-weight: 400;
+    font-size: 0.9em;
+
+        }
     i {
         color: #7E7E7E;
         font-size: 1.4em;
@@ -99,6 +102,7 @@
         box-shadow: 0px 4px 10px 5px rgb(230, 230, 230);
         width: 90%;
         border-radius: 15px;
+        position: relative;
 
         img {
             width: 100%;
@@ -115,6 +119,24 @@
         p {
             font-weight: 300;
 
+        }
+
+        .restaurants__card__new {
+            font-size: 1em;
+            font-weight: 500;
+            color: var(--text-new-color);
+            border: 1px solid transparent;
+            border-radius: 5px;
+            padding: 7px 13px 7px 13px;
+            background-color: var(--tertiary-color);
+            position: absolute;
+            right: 15px;
+            top: 15px;
+
+             &:hover {
+                opacity: 92%;
+                box-shadow: 0px 2px 12px 3px var(--tertiary-color);
+             }
         }
 
         .restaurants__card__container {
