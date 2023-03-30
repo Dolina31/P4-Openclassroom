@@ -20,7 +20,7 @@
         }
     }
 }
-.menu__img__size {
+.img__size {
     aspect-ratio: 5/3;
     img {
         width: 100%;
@@ -28,7 +28,7 @@
         object-fit: cover;
     }
 }
-.section__menu {
+.background {
     background-color: var(--bg-color-clear);
     border-radius: 45px 45px 0 0 ;
     padding-top: 40px;
@@ -52,7 +52,7 @@
         width: 50px;
        
     } 
-    .section__menu__Name-heart {
+    .Title-and-like {
         @include flex-position (row, null, center);
         position: relative;
         
@@ -70,8 +70,45 @@
     gap: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
+    
+            .btn-one {
+                opacity: 0;
+                animation: fade-in 1.5s 0.1s forwards;
+            }
+            .btn-two {
+                opacity: 0;
+                animation: fade-in 1.5s 0.3s forwards;
+            }
+            .btn-three {
+                opacity: 0;
+                animation: fade-in 1.5s 0.5s forwards;
+            }
+            .btn-four {
+                opacity: 0;
+                animation: fade-in 1.5s 0.8s forwards;
+            }
+            .btn-five {
+                opacity: 0;
+                animation: fade-in 1.5s 0.9s forwards;
+            }
+            .btn-six {
+                opacity: 0;
+                animation: fade-in 1.5s 1.1s forwards;
+            }
+            .btn-seven {
+                opacity: 0;
+                animation: fade-in 1.5s 1.4s forwards;
+            }
+            .btn-eight {
+                opacity: 0;
+                animation: fade-in 1.5s 1.5s forwards;
+            }
+            .btn-neine {
+                opacity: 0;
+                animation: fade-in 1.5s 1.7s forwards;
+            }
 
-        .section__menu__btn {
+        .menu__btn {
             width: 92%;
             border: none;
             border-radius: 20px;
@@ -79,11 +116,13 @@
             background-color: white;
             box-shadow: 0px 0px 8px 4px rgb(235, 231, 231);
 
+            
+
             &:hover { 
                 box-shadow: 0px 0px 9px 6px rgb(219, 217, 217);
             }
         }    
-        .section__menu__btn__title {
+        .menu__btn__title {
             font-size: 1.4em;
             font-weight: 700;
             padding-bottom: 5px;
@@ -94,18 +133,18 @@
             
         }
     
-        .section__menu__btn__container__details {
+        .menu__btn__container__details {
             font-size: 1.35em;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
 
-        .section__menu__btn__container__position {
+        .menu__btn__container__position {
             @include flex-position (row, space-between, center)
         }
 
-        .section__menu__btn__container__price {
+        .menu__btn__container__price {
             font-weight: 700;
             font-size: 1.2em;
             padding-left: 5px
@@ -118,5 +157,13 @@
 
     .cta__menu__size {
         width: 50%;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

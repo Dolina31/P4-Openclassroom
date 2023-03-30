@@ -76,29 +76,29 @@ footer p {
   box-shadow: 0px 4px 8px 4px rgb(235, 231, 231);
 }
 
-.menu__img__size {
+.img__size {
   aspect-ratio: 5/3;
 }
-.menu__img__size img {
+.img__size img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.section__menu {
+.background {
   background-color: var(--bg-color-clear);
   border-radius: 45px 45px 0 0;
   padding-top: 40px;
   margin-top: -44px;
   position: relative;
 }
-.section__menu h1 {
+.background h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
   font-size: 1.4em;
   padding-left: 20px;
 }
-.section__menu h2 {
+.background h2 {
   font-size: 0.9em;
   font-weight: 300;
   margin-left: 15px;
@@ -107,13 +107,13 @@ footer p {
   border-bottom: 3px solid var(--tertiary-color);
   width: 50px;
 }
-.section__menu .section__menu__Name-heart {
+.background .Title-and-like {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
 }
-.section__menu .section__menu__Name-heart i {
+.background .Title-and-like i {
   position: absolute;
   display: flex;
   justify-content: end;
@@ -130,7 +130,43 @@ footer p {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.btn-position .section__menu__btn {
+.btn-position .btn-one {
+  opacity: 0;
+  animation: fade-in 1.5s 0.1s forwards;
+}
+.btn-position .btn-two {
+  opacity: 0;
+  animation: fade-in 1.5s 0.3s forwards;
+}
+.btn-position .btn-three {
+  opacity: 0;
+  animation: fade-in 1.5s 0.5s forwards;
+}
+.btn-position .btn-four {
+  opacity: 0;
+  animation: fade-in 1.5s 0.8s forwards;
+}
+.btn-position .btn-five {
+  opacity: 0;
+  animation: fade-in 1.5s 0.9s forwards;
+}
+.btn-position .btn-six {
+  opacity: 0;
+  animation: fade-in 1.5s 1.1s forwards;
+}
+.btn-position .btn-seven {
+  opacity: 0;
+  animation: fade-in 1.5s 1.4s forwards;
+}
+.btn-position .btn-eight {
+  opacity: 0;
+  animation: fade-in 1.5s 1.5s forwards;
+}
+.btn-position .btn-neine {
+  opacity: 0;
+  animation: fade-in 1.5s 1.7s forwards;
+}
+.btn-position .menu__btn {
   width: 92%;
   border: none;
   border-radius: 20px;
@@ -138,10 +174,10 @@ footer p {
   background-color: white;
   box-shadow: 0px 0px 8px 4px rgb(235, 231, 231);
 }
-.btn-position .section__menu__btn:hover {
+.btn-position .menu__btn:hover {
   box-shadow: 0px 0px 9px 6px rgb(219, 217, 217);
 }
-.btn-position .section__menu__btn__title {
+.btn-position .menu__btn__title {
   font-size: 1.4em;
   font-weight: 700;
   padding-bottom: 5px;
@@ -150,19 +186,19 @@ footer p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.btn-position .section__menu__btn__container__details {
+.btn-position .menu__btn__container__details {
   font-size: 1.35em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.btn-position .section__menu__btn__container__position {
+.btn-position .menu__btn__container__position {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.btn-position .section__menu__btn__container__price {
+.btn-position .menu__btn__container__price {
   font-weight: 700;
   font-size: 1.2em;
   padding-left: 5px;
@@ -179,6 +215,14 @@ footer p {
   width: 50%;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .header__location {
   display: flex;
   flex-direction: row;
