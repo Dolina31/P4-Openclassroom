@@ -46,14 +46,15 @@
         font-size: 0.9em;
         font-weight: 300;
         margin-left: 15px;
-        padding-bottom: 5px;
+        padding-bottom: 5px; 
+        padding-top: 30px;
         border-bottom: 3px solid var(--tertiary-color);
         width: 50px;
+       
     } 
     .section__menu__Name-heart {
         @include flex-position (row, null, center);
         position: relative;
-        padding-bottom: 20px;
         
         i {
             position: absolute;

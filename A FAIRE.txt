@@ -1,7 +1,6 @@
 ACCUEIL :
--
+- Enlever l'animation sur "nouveau"
 
 
 PAGE MENU :
 - Chercher pourquoi la police d'écriture dans les boutons en font-weight 300 n'a pas la même apparence que celle de l'accueil
--

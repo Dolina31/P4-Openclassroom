@@ -103,6 +103,7 @@ footer p {
   font-weight: 300;
   margin-left: 15px;
   padding-bottom: 5px;
+  padding-top: 30px;
   border-bottom: 3px solid var(--tertiary-color);
   width: 50px;
 }
@@ -111,7 +112,6 @@ footer p {
   flex-direction: row;
   align-items: center;
   position: relative;
-  padding-bottom: 20px;
 }
 .section__menu .section__menu__Name-heart i {
   position: absolute;
@@ -321,10 +321,6 @@ footer p {
   right: 15px;
   top: 15px;
 }
-.restaurants__card .restaurants__card__new:hover {
-  opacity: 92%;
-  box-shadow: 0px 2px 12px 3px var(--tertiary-color);
-}
 .restaurants__card .restaurants__card__container {
   color: black;
   padding: 15px;
@@ -352,7 +348,7 @@ footer p {
   width: 70%;
 }
 .cta__btn:hover {
-  box-shadow: 0px 4px 13px 6px rgb(180, 180, 180);
+  box-shadow: 0px 5px 12px 4px rgb(180, 180, 180);
   opacity: 0.8;
 }
 
