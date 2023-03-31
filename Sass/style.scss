@@ -1,8 +1,10 @@
-@import "../Sass/Utils/mixins";
 @import "../Sass/Utils/variables";
+@import "../Sass/Utils/functions";
+@import "../Sass/Utils/mixins";
+@import "../Sass/Base/Base";
+@import "../Sass/Components/Button";
 @import "../Sass/Layouts/footer";
 @import "../Sass/Layouts/header";
 @import "../Sass/Pages/page-menu.scss";
 @import "../Sass/Pages/index.scss";
-@import "../Sass/Components/Button";
-@import "../Sass/Base/Base";
+

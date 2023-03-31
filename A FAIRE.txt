@@ -2,6 +2,6 @@ ACCUEIL :
 
 
 PAGE MENU :
-- Faire une boucle pour les animations de bouton
+- modifié l'animation d'apparition des bouton pour qu'elle soit plus courte ?
 - ranger les imbrication pour qu'elles soient plus lisible et déplacer @keyframes
 - Chercher pourquoi la police d'écriture dans les boutons en font-weight 300 n'a pas la même apparence que celle de l'accueil
