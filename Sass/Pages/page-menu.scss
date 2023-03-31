@@ -70,6 +70,15 @@
     gap: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
     
         .menu__btn {
             width: 92%;
@@ -120,13 +129,5 @@
 
     .cta__menu__size {
         width: 50%;
-    }
-}
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
     }
 }
