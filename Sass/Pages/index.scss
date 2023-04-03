@@ -63,7 +63,7 @@
     position: absolute;
     left: -15px; 
     @include flex-position (null,center, center);
-    background-color: #9356DC;
+    background-color: var(--primary-color);
     color: white;
     font-weight: 400;
     font-size: 0.9em;
@@ -81,7 +81,7 @@
         background-color: #F5EDFF;
 
         i {
-            color: #9356DC;
+            color: var(--primary-color);
             }
     }
 }
@@ -154,43 +154,85 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: linear-gradient(308deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%); 
-    animation: loader-fade-out 0.5s 3s forwards;
+    background: linear-gradient(25deg, rgba(255,121,218,1) 0%, rgba(165,110,232,1) 100%);
+    animation: loader-fade-out 1s 3s forwards;
+
     .loader {
         width: 100%;
         height: 100%;
-        font-size:28px;
         color: white;
-        @include flex-position (row, center, center);
-        font-family:'Shrikhand', cursive;
-        gap: 1%;
+        @include flex-position (null, center, center);
+    }
 
+    .loader__logo {
+        font-size: 40px;
+        font-family:'Shrikhand', cursive;
+        padding: 5px;
+    }
+
+    .line-1 {
+        width: 8px;
+        height: 40px;
+        margin: 2px;
+        border-radius: 3px;
+        background-color: white;
+        animation: loader__line__growing  0.6s 0.4s infinite ease-in-out alternate;
+    }
+    .line-2 {
+        width: 8px;
+        height: 40px;
+        margin: 2px;
+        border-radius: 3px;
+        background-color: white;
+        animation: loader__line__growing  0.6s 0.2s infinite ease-in-out alternate ;
+    }
+    .line-3 {
+        width: 8px;
+        height: 40px;
+        margin: 2px;
+        border-radius: 3px;
+        background-color: white;
+        animation: loader__line__growing  0.6s infinite ease-in-out alternate;
+    }
+    .line-4 {
+        width: 8px;
+        height: 40px;
+        margin: 2px;
+        border-radius: 3px;
+        background-color: white;
+        animation: loader__line__growing  0.6s infinite ease-in-out alternate;
+    }
+    .line-5 {
+        width: 8px;
+        height: 40px;
+        margin: 2px;
+        border-radius: 3px;
+        background-color: white;
+        animation: loader__line__growing  0.6s 0.2s infinite ease-in-out alternate;
+    }
+    .line-6 {
+        width: 8px;
+        height: 40px;
+        margin: 2px;
+        border-radius: 3px;
+        background-color: white;
+        animation: loader__line__growing  0.6s 0.4s infinite ease-in-out alternate;
     }
 
 }
 
-@keyframes letter {
+@keyframes loader__line__growing {
     0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
+        opacity: 0;
+        transform: scaleY(0.5);
     }
     100% {
-        transform: scale(1);
+        opacity: 100%;
+        transform: scaleY(1);
     }
 }
 
-@keyframes dot-moving {
-    from {
-        transform: translateY(0%);
-    }
-    to {
-        transform: translateY(-20%);
-    }
-}
-
-@keyframes loader-fade-out {
+@keyframes loader-fade-ou {
     0% {
         opacity: 100%;
     }

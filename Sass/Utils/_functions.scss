@@ -12,6 +12,6 @@
 
 @for $loader-letter from 1 through 10 {
     .letter-#{$loader-letter} {
-        animation: letter 2s #{nth($loader-letter-delay, $loader-letter)} ease-in-out infinite alternate;
+        animation: letter 2s #{nth($loader-letter-delay, $loader-letter)} infinite ease-in-out forwards;
     }
 }

@@ -1,7 +1,7 @@
 ACCUEIL :
-
+- crée une boucle pour le loader
+- regler le problème du loader qui est trop "sec" au démarrage
 
 PAGE MENU :
-- modifié l'animation d'apparition des bouton pour qu'elle soit plus courte ?
 - ranger les imbrication pour qu'elles soient plus lisible et déplacer @keyframes
 - Chercher pourquoi la police d'écriture dans les boutons en font-weight 300 n'a pas la même apparence que celle de l'accueil
