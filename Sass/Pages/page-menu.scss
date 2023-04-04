@@ -55,14 +55,13 @@
     .Title-and-like {
         @include flex-position (row, null, center);
         position: relative;
-        
-        i {
-            position: absolute;
-            @include flex-position (null, end, null);
-            width: 90%;
-            padding-left: 20px;
-            font-size: 1.6em;
-        }
+
+            .fa-solid {
+                @include fa-solid (5%, 4px)
+            }
+            .fa-regular {
+                @include fa-regular (5%, 4px)
+            }
     }
 }
 .btn-position {

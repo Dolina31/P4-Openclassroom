@@ -257,13 +257,32 @@ footer p {
   align-items: center;
   position: relative;
 }
-.background .Title-and-like i {
+.background .Title-and-like .fa-solid {
   position: absolute;
-  display: flex;
-  justify-content: end;
-  width: 90%;
-  padding-left: 20px;
-  font-size: 1.6em;
+  font-size: 1.5em;
+  right: 5%;
+  bottom: 4px;
+  opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(0deg, rgb(255, 121, 218) 10%, rgb(165, 110, 232) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all ease-in-out 0.4s;
+}
+.background .Title-and-like .fa-solid:hover {
+  opacity: 100%;
+  transform: scale(1.05);
+}
+.background .Title-and-like .fa-regular {
+  font-size: 1.5em;
+  opacity: 100%;
+  position: absolute;
+  right: 5%;
+  bottom: 4px;
+  transition: all ease-in-out 0.2s;
+}
+.background .Title-and-like .fa-regular:hover {
+  opacity: 0;
 }
 
 .btn-position {
@@ -476,23 +495,59 @@ footer p {
 .restaurants__card .restaurants__card__container {
   color: black;
   padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.restaurants__card .restaurants__card__container .restaurants__card__container__icon {
-  padding: 7px 22px 0px 22px;
-}
-.restaurants__card .restaurants__card__container .fa-solid {
-  color: transparent;
-  background-image: linear-gradient(175deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
-  -webkit-background-clip: text;
-}
-.restaurants__card i {
-  font-size: 1.5em;
+  position: relative;
 }
 
-/*loader*/
+.restaurants__card__container__icon .fa-solid {
+  position: absolute;
+  font-size: 1.5em;
+  right: 25px;
+  bottom: 30px;
+  opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(0deg, rgb(255, 121, 218) 10%, rgb(165, 110, 232) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all ease-in-out 0.4s;
+}
+.restaurants__card__container__icon .fa-solid:hover {
+  opacity: 100%;
+  transform: scale(1.05);
+}
+.restaurants__card__container__icon .fa-regular {
+  font-size: 1.5em;
+  opacity: 100%;
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+  transition: all ease-in-out 0.2s;
+}
+.restaurants__card__container__icon .fa-regular:hover {
+  opacity: 0;
+}
+
+.loader-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: linear-gradient(25deg, rgb(255, 121, 218) 0%, rgb(165, 110, 232) 100%);
+  animation: loader-fade-out 1s 3s forwards;
+}
+.loader-container .loader {
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-container .loader__logo {
+  font-size: 40px;
+  font-family: "Shrikhand", cursive;
+  padding: 5px;
+}
+
 @keyframes loader__line__growing {
   0% {
     opacity: 0;
