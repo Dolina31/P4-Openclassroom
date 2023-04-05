@@ -3,4 +3,5 @@ ACCUEIL :
 
 PAGE MENU :
 - ranger les imbrication pour qu'elles soient plus lisible et déplacer @keyframes
+- Faire en sorte que l'animation des boutons efface correctement le texte
 - Chercher pourquoi la police d'écriture dans les boutons en font-weight 300 n'a pas la même apparence que celle de l'accueil

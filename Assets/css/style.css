@@ -267,11 +267,13 @@ footer p {
   background-image: linear-gradient(0deg, rgb(255, 121, 218) 10%, rgb(165, 110, 232) 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.7s;
+  transform: scale(0.5);
+  cursor: pointer;
 }
 .background .Title-and-like .fa-solid:hover {
   opacity: 100%;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 .background .Title-and-like .fa-regular {
   font-size: 1.5em;
@@ -280,9 +282,7 @@ footer p {
   right: 5%;
   bottom: 4px;
   transition: all ease-in-out 0.2s;
-}
-.background .Title-and-like .fa-regular:hover {
-  opacity: 0;
+  cursor: pointer;
 }
 
 .btn-position {
@@ -301,18 +301,30 @@ footer p {
     opacity: 1;
   }
 }
-.btn-position .menu__btn {
+
+.menu__btn {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
   width: 92%;
   border: none;
   border-radius: 20px;
-  padding: 15px;
+  height: 80px;
   background-color: white;
   box-shadow: 0px 0px 8px 4px rgb(235, 231, 231);
+  padding: 0;
 }
-.btn-position .menu__btn:hover {
-  box-shadow: 0px 0px 9px 6px rgb(219, 217, 217);
+.menu__btn:hover > .menu__btn__check-animation {
+  margin-right: 0;
 }
-.btn-position .menu__btn__title {
+.menu__btn:focus i {
+  animation: icon-clic-turn 0.5s ease-in-out;
+}
+.menu__btn .menu__btn__position-center {
+  width: 100%;
+  padding: 15px 15px 10px 15px;
+}
+.menu__btn .menu__btn__title {
   font-size: 1.4em;
   font-weight: 700;
   padding-bottom: 5px;
@@ -321,22 +333,42 @@ footer p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.btn-position .menu__btn__container__details {
-  font-size: 1.35em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.btn-position .menu__btn__container__position {
+.menu__btn .menu__btn__container__position {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.btn-position .menu__btn__container__price {
+.menu__btn .menu__btn__container__details {
+  font-size: 1.35em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__btn .menu__btn__container__price {
   font-weight: 700;
   font-size: 1.2em;
-  padding-left: 5px;
+  padding-right: 15px;
+}
+
+.menu__btn__check-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tertiary-color);
+  height: 80px;
+  width: 80px;
+  border-radius: 0px 20px 20px 0px;
+  margin-right: -7em;
+  transition: margin-right 0.5s ease-out;
+}
+.menu__btn__check-animation i {
+  padding: 4px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  font-size: 1.1em;
+  color: var(--tertiary-color);
 }
 
 .cta__menu__position {
@@ -350,6 +382,14 @@ footer p {
   width: 50%;
 }
 
+@keyframes icon-clic-turn {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
 .header__location {
   display: flex;
   flex-direction: row;
@@ -508,11 +548,12 @@ footer p {
   background-image: linear-gradient(0deg, rgb(255, 121, 218) 10%, rgb(165, 110, 232) 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.7s;
+  transform: scale(0.5);
 }
 .restaurants__card__container__icon .fa-solid:hover {
   opacity: 100%;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 .restaurants__card__container__icon .fa-regular {
   font-size: 1.5em;
@@ -521,9 +562,6 @@ footer p {
   right: 25px;
   bottom: 30px;
   transition: all ease-in-out 0.2s;
-}
-.restaurants__card__container__icon .fa-regular:hover {
-  opacity: 0;
 }
 
 .loader-container {
