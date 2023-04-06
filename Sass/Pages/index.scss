@@ -197,3 +197,10 @@
         visibility: hidden;
     }
 }
+
+@media screen and (min-width: 768px) {
+
+    .fonctionnement__btn {
+       @include flex-position (row, null, null)
+    }
+}

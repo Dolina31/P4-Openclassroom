@@ -1,5 +1,4 @@
 ACCUEIL :
-- enlever les espaces html
 
 PAGE MENU :
 - ranger les imbrication pour qu'elles soient plus lisible et déplacer @keyframes

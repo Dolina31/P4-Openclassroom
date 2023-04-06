@@ -71,19 +71,9 @@
     gap: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-
-    @keyframes fade-in {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
 }
 
 .menu__btn {
-    @include flex-position (null, space-between, null);
     overflow: hidden;
     width: 92%;
     border: none;
@@ -93,66 +83,65 @@
     box-shadow: 0px 0px 8px 4px rgb(235, 231, 231);
     padding: 0;
 
-    &:hover > .menu__btn__check-animation {
-        margin-right: 0;
-    }
+    .test {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: start ;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
-    &:focus i {
-        animation: icon-clic-turn 0.5s ease-in-out;
-    }
-    
-    .menu__btn__position-center {
-    width: 100%;
-    padding: 15px 15px 10px 15px;
-    }
-    
-    .menu__btn__title {
-    font-size: 1.4em;
-    font-weight: 700;
-    padding-bottom: 5px;
-    text-align: start;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    }
+        &:hover > .test-icon {
+            margin-right: 0;
+           
+        }
 
-    .menu__btn__container__position {
-    @include flex-position (row, space-between, center)
-    }
+        &:hover i {
+             animation: icon-fade-in-turn 0.5s 0.2s ease-in-out;
+        }
 
-    .menu__btn__container__details {
-        font-size: 1.35em;
+        &:focus i {
+            animation: icon-clic-turn 0.5s ease-in-out;
+        }
+    }
+    .test-2 {
+        padding: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 
-    .menu__btn__container__price {
-        font-weight: 700;
-        font-size: 1.2em;
-        padding-right: 15px
+    .test-3 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
-}  
-
-.menu__btn__check-animation {
-    @include flex-position (null, center, center);
-    background-color: var(--tertiary-color);
-    height: 80px;
-    width: 80px;
-    border-radius: 0px 20px 20px 0px;
-    margin-right: -7em;
-    transition: margin-right 0.5s ease-out;
     
-    i {
-        padding: 4px;
-        background-color: white;
-        border-radius: 50%;
-        border: 1px solid transparent;
-        font-size: 1.1em;
-        color: var(--tertiary-color);
+    .test-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        width: 80px;
+        background-color: var(--tertiary-color);
+        border-radius: 0px 20px 20px 0px;
+        margin-right: -7em;
+        transition: margin-right 0.5s ease-out;
+    
+        i {
+            padding: 5px;
+            background: white;
+            color: var(--tertiary-color);
+            border-radius: 50%; 
+        }
     }
-}
 
+}  
 
 .cta__menu__position {
     @include flex-position (null, center, center);
@@ -164,6 +153,17 @@
     }
 }
 
+@keyframes fade-in {
+    0% {
+        margin-top: 15px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
   @keyframes icon-clic-turn {
     0% {
         transform: rotateY(360deg);
@@ -171,5 +171,15 @@
 
     100% {
         transform: rotateY(0deg);
+    }
+  }
+
+  @keyframes icon-fade-in-turn {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
   }
