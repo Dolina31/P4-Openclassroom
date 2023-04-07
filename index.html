@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>ohmyfood</title>
 </head>
 <body>
@@ -22,7 +22,6 @@
             <div class="line-6"></div>
         </div>
     </div>
-    </div>
     <header>
         <div class="header__logo"><img src="Assets/Images/logo/ohmyfood.png" alt="Logo de ohmyfood"></div> 
         <aside class="header__location" >
@@ -34,32 +33,34 @@
         <section class="presentation">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-                <a href="#"><button class="cta__btn">Explorer nos restaurants</button></a>
+                <a href="#" class="cta__btn__position">
+                    <div class="cta__btn">Explorer nos restaurants</div>
+                </a>
         </section>
 
         <section class="fonctionnement">
             <h3 class="h3-position">Fonctionnement</h3>
             <div class="fonctionnement__btn">
                 <a href="#">
-                    <button class="fonctionnement__btn__container">
+                    <div class="fonctionnement__btn__container">
                         <div class="fonctionnement__btn__number">1</div>
                         <i class="fa-solid fa-mobile-screen-button"></i>
                         <p>Choisissez un restaurant</p>
-                    </button>
+                    </div>
                 </a>
                 <a href="#">
-                    <button class="fonctionnement__btn__container">
+                    <div class="fonctionnement__btn__container">
                         <div class="fonctionnement__btn__number">2</div>
                         <i class="fa-solid fa-list-ul"></i>
                         <p>Composez votre menu</p>
-                    </button>
+                    </div>
                 </a>
                 <a href="#">
-                    <button class="fonctionnement__btn__container">
+                    <div class="fonctionnement__btn__container">
                         <div class="fonctionnement__btn__number">3</div>
                         <i class="fa-sharp fa-solid fa-store"></i>
                         <p>Dégustez au restaurant</p>
-                    </button>
+                    </div>
                 </a>
             </div>
         </section>
@@ -139,9 +140,9 @@
         <p>ohmyfood</p>
         <div class="footer__list">
             <a href="#" class="footer__list__join-us"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            <a href="#" class="footer__list__join-us "><i class="fa-solid fa-handshake-angle handshake-icon-width"></i>Devenir partenaire</a>
+            <a href="#" class="footer__list__join-us responsive__padding-right"><i class="fa-solid fa-handshake-angle handshake-icon-size"></i>Devenir partenaire</a>
             <a href="#" class="footer__list__info">Mentions légales</a>
-            <a href="mailto:adresse-email@domaine.com" class="footer__list__info">Contact</a>
+            <a href="mailto:ohmyfood@gmail.com" class="footer__list__info">Contact</a>
         </div>
     </footer>
 

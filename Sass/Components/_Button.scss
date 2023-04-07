@@ -1,19 +1,23 @@
-.cta__btn {
-    color: white;
-    font-size: $police-size;
-    background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-    padding: 18px;
-    border-radius: 40px;
-    border: none;
-    box-shadow: 0px 4px 10px 1px rgb(180, 180, 180);
-    
-    
-    a {
-        width: 70%;
-    }
 
-    &:hover {
-        box-shadow: 0px 5px 12px 4px rgb(180, 180, 180);
-        opacity: 0.8;
+ .cta__btn__position{
+    @include flex-position (null, center, center);
+
+    .cta__btn {
+        color: white;
+        font-size: $police-size;
+        background: linear-gradient(175deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+        padding: 18px;
+        padding-right: 10%;
+        padding-left: 10%;
+        border-radius: 40px;
+        border: none;
+        box-shadow: 0px 4px 7px 1px rgb(180, 180, 180);
+        transition: all 0.5s;
+
+
+        &:hover {
+        box-shadow: 0px 5px 8px 3px rgb(180, 180, 180);
+        background: linear-gradient(175deg, rgb(250, 131, 216) 0%, rgb(172, 110, 248) 100%);
+        }
     }
 }

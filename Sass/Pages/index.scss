@@ -40,8 +40,12 @@
     gap: 35px;
 
         a {
-            width: 100%;
+            width: 85%;
             @include flex-position (null, center, center);
+        }
+
+        p {
+            color: black;
         }
   
     } 
@@ -51,9 +55,10 @@
     @include btn-form;
     box-shadow: 0px 4px 8px 4px rgb(235, 231, 231);
     width: 90%;
-    font-size: 0.9em;
+    font-size: 0.88em;
     font-weight: 600;
     position: relative;
+    white-space: nowrap;
 
     .fonctionnement__btn__number {
     border-radius: 50%;
@@ -61,7 +66,7 @@
     height: 30px;
     border: none;
     position: absolute;
-    left: -15px; 
+    left: -14px; 
     @include flex-position (null,center, center);
     background-color: var(--primary-color);
     color: white;
@@ -195,12 +200,5 @@
     }
     100% {
         visibility: hidden;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
-    .fonctionnement__btn {
-       @include flex-position (row, null, null)
     }
 }

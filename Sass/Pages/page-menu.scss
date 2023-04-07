@@ -10,10 +10,11 @@
         padding: 7px 12px 7px 12px;
         margin-left: 13px;
         left: 5px;
+        border: transparent;
+        transition: box-shadow 0.3s, color 0.3s 0.1s ease-out;
 
-         &:hover {
+        &:hover {
         color: var(--primary-color);
-        border-radius: 50%;
         border: 2px solid transparent;
         padding: 5px 10px 5px 10px;
         box-shadow: 0px 4px 8px 4px rgb(235, 231, 231);
@@ -74,63 +75,59 @@
 }
 
 .menu__btn {
-    overflow: hidden;
     width: 92%;
+    overflow: hidden;
     border: none;
     border-radius: 20px;
     height: 80px;
     background-color: white;
     box-shadow: 0px 0px 8px 4px rgb(235, 231, 231);
+    margin-top: 25px;
     padding: 0;
 
-    .test {
+    .menu__btn__position {
         width: 100%;
         display: flex;
         flex-direction: row;
         text-align: start ;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-
-        &:hover > .test-icon {
+        
+        &:hover > .icon__check {
             margin-right: 0;
            
         }
 
         &:hover i {
-             animation: icon-fade-in-turn 0.5s 0.2s ease-in-out;
-        }
-
-        &:focus i {
-            animation: icon-clic-turn 0.5s ease-in-out;
+             animation: icon-fade-in-turn 0.5s 0.1s ease-in-out;
         }
     }
-    .test-2 {
+
+    .menu__btn__container {
         padding: 15px;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex-position (column, center, null);
+        gap: 5px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        
+        span {
+            font-weight: 700;
+        }
+
     }
 
-    .test-3 {
+    .menu__btn__price-position {
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        @include flex-position (null, space-between, center);
     }
     
-    .test-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .icon__check {
+        @include flex-position (null, center, center);
         height: 80px;
         width: 80px;
         background-color: var(--tertiary-color);
         border-radius: 0px 20px 20px 0px;
-        margin-right: -7em;
+        margin-right: -4.50em;
         transition: margin-right 0.5s ease-out;
     
         i {
@@ -143,19 +140,13 @@
 
 }  
 
-.cta__menu__position {
-    @include flex-position (null, center, center);
-    padding-top: 35px;
-    padding-bottom: 55px;
-
-    .cta__menu__size {
-        width: 50%;
-    }
+.cta__menu__padding {
+    margin-top: 35px;
+    margin-bottom: 55px;
 }
 
 @keyframes fade-in {
     0% {
-        margin-top: 15px;
         opacity: 0;
     }
     100% {
@@ -164,16 +155,6 @@
     }
 }
 
-  @keyframes icon-clic-turn {
-    0% {
-        transform: rotateY(360deg);
-    }
-
-    100% {
-        transform: rotateY(0deg);
-    }
-  }
-
   @keyframes icon-fade-in-turn {
     0% {
         transform: rotate(0deg);
@@ -181,5 +162,33 @@
 
     100% {
         transform: rotate(360deg);
+    }
+  }
+
+  /*****Version Desktop*****/
+
+  @media screen and (min-width: 768px) {
+
+    .img__size {
+        aspect-ratio: 8/2;
+    }
+
+    .main__menu__responsive{
+        @include flex-position (null, center, center);
+    }
+
+    .background {
+        width: 50%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: -55px;
+    }
+
+    .Title-and-like {
+        @include flex-position (null, center, center);
+
+        i {
+            position: relative ;
+        }
     }
   }

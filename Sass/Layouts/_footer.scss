@@ -23,16 +23,48 @@ footer {
     .footer__list__join-us {  
 
         i {
-            padding-right: 15px;
+            padding-right: 10px;
             font-size: 0.9em;
         }  
-        .handshake-icon-width {
+        .handshake-icon-size {
             width: 15px;
-            padding-right: 15px;
+            font-size: 0.85em;
         }
     }
+
     .footer__list__info {
         font-weight: 300;
 
     }
-}   
+}       
+
+/*****Version Desktop*****/
+
+@media  screen and (min-width: 768px) {
+    footer {
+        @include flex-position (row-reverse, null, null);
+        padding: 40px 30px 40px 30px; 
+
+        p {
+            padding: 0;
+        }
+    }
+
+    .footer__list {
+        @include flex-position (row, null, center);
+        padding-right: 3%;
+
+        a {
+            white-space: nowrap;
+            font-size: 0.9em;
+        }
+        
+        .responsive__padding-right {
+        padding-right: 20px;
+        }
+
+        i {
+            padding-right: 5px;
+        }
+    } 
+}
