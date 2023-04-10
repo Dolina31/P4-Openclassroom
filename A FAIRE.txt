@@ -1,5 +1,5 @@
 ACCUEIL :
-Regler le problème avec l'import de font awesome qui crée une erreur w3c
+- Regler le problème avec l'import de font awesome qui crée une erreur w3c
 - Enlever le white-space:nowrap des button fonctionnement
 
 
