@@ -60,6 +60,16 @@
     font-weight: 600;
     position: relative;
     transition: all 0.4s ease-in-out;
+    white-space: nowrap;
+
+    &:hover {
+        box-shadow: 0px 4px 5px 3px rgb(218, 217, 217);
+        background-color: #F5EDFF;
+
+        i {
+            color: var(--primary-color);
+            }
+    }
 
     .fonctionnement__btn__number {
     border-radius: 50%;
@@ -82,14 +92,7 @@
         padding-left: 5px;
     }
 
-    &:hover {
-        box-shadow: 0px 5px 6px 4px rgb(223, 223, 223);
-        background-color: #F5EDFF;
-
-        i {
-            color: var(--primary-color);
-            }
-    }
+    
 }
 
 .restaurants {
@@ -110,10 +113,15 @@
 }
 
 .restaurants__card {
-        box-shadow: 0px 4px 10px 5px rgb(230, 230, 230);
+        box-shadow: 0px 0px 6px 4px rgb(235, 231, 231);
         width: 90%;
         border-radius: 15px;
         position: relative;
+        transition: box-shadow 0.4s ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 0px 8px 6px rgb(218, 217, 217);
+        }
 
         img {
             width: 100%;
@@ -155,11 +163,11 @@
 .restaurants__card__container__icon {
     
     .fa-solid {
-        @include fa-solid (25px, 30px)
+        @include fa-solid (absolute, 25px, 30px)
     }
     
     .fa-regular {
-        @include fa-regular (25px, 30px)
+        @include fa-regular (absolute, 25px, 30px)
     }
 }
         
@@ -213,9 +221,9 @@
 
     .cta__btn__position {
 
-        .cta__btn {
-        padding-right: 1%;
-        padding-left: 1%;
+        .cta__btn__index {
+        padding-right: 3%;
+        padding-left: 3%;
         }
     }
 
@@ -231,6 +239,10 @@
         }
     }
 
+    .fonctionnement__btn__container {
+        white-space: normal;
+    }
+
     .restaurants {
 
         .restaurants__position {
@@ -244,6 +256,8 @@
 
         .restaurants__card {
             width: 41%;
+
+            
             img {
                 aspect-ratio: 8/3;
             }

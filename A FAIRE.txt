@@ -1,10 +1,7 @@
 ACCUEIL :
 - Regler le problème avec l'import de font awesome qui crée une erreur w3c
-- Enlever le white-space:nowrap des button fonctionnement
-
 
 PAGE MENU :
 - placer correctement le coeur en mode desktop
-- ranger les imbrication pour qu'elles soient plus lisible et déplacer @keyframes
-- Faire en sorte que l'animation des boutons efface correctement le texte
+- l'apparition des bouton ne se fait pas correctement
 - Chercher pourquoi la police d'écriture dans les boutons en font-weight 300 n'a pas la même apparence que celle de l'accueil

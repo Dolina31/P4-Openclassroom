@@ -244,7 +244,7 @@ footer p {
   margin-left: 13px;
   left: 5px;
   border: transparent;
-  transition: box-shadow 0.3s, color 0.3s 0.1s ease-out;
+  transition: box-shadow 0.2s, color 0.2s 0.1s ease-out;
 }
 .header__menu__position .arrow-icon:hover {
   color: var(--primary-color);
@@ -333,9 +333,12 @@ footer p {
   border-radius: 20px;
   height: 80px;
   background-color: white;
-  box-shadow: 0px 0px 8px 4px rgb(235, 231, 231);
+  box-shadow: 0px 0px 5px 2px rgb(235, 231, 231);
   margin-top: 25px;
   padding: 0;
+}
+.menu__btn:hover {
+  box-shadow: 0px 0px 5px 3px rgb(218, 217, 217);
 }
 .menu__btn .menu__btn__position {
   width: 100%;
@@ -343,11 +346,24 @@ footer p {
   flex-direction: row;
   text-align: start;
 }
+.menu__btn .menu__btn__position h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.06em;
+}
+.menu__btn .menu__btn__position p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 85%;
+  font-size: 1em;
+}
 .menu__btn .menu__btn__position:hover > .icon__check {
   margin-right: 0;
 }
 .menu__btn .menu__btn__position:hover i {
-  animation: icon-fade-in-turn 0.5s 0.1s ease-in-out;
+  animation: icon-fade-in-turn 0.5s ease-in-out;
 }
 .menu__btn .menu__btn__container {
   padding: 15px;
@@ -355,10 +371,10 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  gap: 5px;
 }
 .menu__btn .menu__btn__container span {
   font-weight: 700;
@@ -377,7 +393,7 @@ footer p {
   width: 80px;
   background-color: var(--tertiary-color);
   border-radius: 0px 20px 20px 0px;
-  margin-right: -4.5em;
+  margin-right: -4em;
   transition: margin-right 0.5s ease-out;
 }
 .menu__btn .icon__check i {
@@ -403,10 +419,14 @@ footer p {
 }
 @keyframes icon-fade-in-turn {
   0% {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: rotate(240deg);
+  }
+  85% {
+    opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 /*****Version Desktop*****/
@@ -425,13 +445,37 @@ footer p {
     padding-right: 10%;
     margin-top: -55px;
   }
-  .Title-and-like {
+  .background .Title-and-like {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    position: static;
   }
-  .Title-and-like i {
-    position: relative;
+  .background .Title-and-like .fa-solid {
+    position: absolute;
+    font-size: 1.5em;
+    right: 5%;
+    bottom: 4px;
+    opacity: 0;
+    color: transparent;
+    background-image: linear-gradient(0deg, rgb(255, 121, 218) 10%, rgb(165, 110, 232) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all ease-in-out 0.7s;
+    cursor: pointer;
+  }
+  .background .Title-and-like .fa-solid:hover {
+    opacity: 100%;
+    transform: scale(1.08);
+  }
+  .background .Title-and-like .fa-regular {
+    font-size: 1.5em;
+    opacity: 100%;
+    position: static;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
   }
 }
 .header__location {
@@ -506,6 +550,14 @@ footer p {
   font-weight: 600;
   position: relative;
   transition: all 0.4s ease-in-out;
+  white-space: nowrap;
+}
+.fonctionnement__btn__container:hover {
+  box-shadow: 0px 4px 5px 3px rgb(218, 217, 217);
+  background-color: #F5EDFF;
+}
+.fonctionnement__btn__container:hover i {
+  color: var(--primary-color);
 }
 .fonctionnement__btn__container .fonctionnement__btn__number {
   border-radius: 50%;
@@ -528,13 +580,6 @@ footer p {
   padding-right: 20px;
   padding-left: 5px;
 }
-.fonctionnement__btn__container:hover {
-  box-shadow: 0px 5px 6px 4px rgb(223, 223, 223);
-  background-color: #F5EDFF;
-}
-.fonctionnement__btn__container:hover i {
-  color: var(--primary-color);
-}
 
 .restaurants {
   background-color: var(--bg-color-clear);
@@ -556,10 +601,14 @@ footer p {
 }
 
 .restaurants__card {
-  box-shadow: 0px 4px 10px 5px rgb(230, 230, 230);
+  box-shadow: 0px 0px 6px 4px rgb(235, 231, 231);
   width: 90%;
   border-radius: 15px;
   position: relative;
+  transition: box-shadow 0.4s ease-in-out;
+}
+.restaurants__card:hover {
+  box-shadow: 0px 0px 8px 6px rgb(218, 217, 217);
 }
 .restaurants__card img {
   width: 100%;
@@ -603,6 +652,7 @@ footer p {
   background-clip: text;
   -webkit-background-clip: text;
   transition: all ease-in-out 0.7s;
+  cursor: pointer;
 }
 .restaurants__card__container__icon .fa-solid:hover {
   opacity: 100%;
@@ -615,6 +665,7 @@ footer p {
   right: 25px;
   bottom: 30px;
   transition: all ease-in-out 0.2s;
+  cursor: pointer;
 }
 
 .loader-container {
@@ -661,9 +712,9 @@ footer p {
   }
 }
 @media screen and (min-width: 769px) {
-  .cta__btn__position .cta__btn {
-    padding-right: 1%;
-    padding-left: 1%;
+  .cta__btn__position .cta__btn__index {
+    padding-right: 3%;
+    padding-left: 3%;
   }
   .fonctionnement .fonctionnement__btn {
     display: flex;
@@ -673,6 +724,9 @@ footer p {
   }
   .fonctionnement .fonctionnement__btn a {
     width: 28%;
+  }
+  .fonctionnement__btn__container {
+    white-space: normal;
   }
   .restaurants .restaurants__position {
     gap: 50px;

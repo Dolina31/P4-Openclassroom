@@ -10,9 +10,9 @@
     padding: 30px;
     background-color: var(--bg-color-clear);
 }
-@mixin fa-solid ($right, $bottom) {
+@mixin fa-solid ($position, $right, $bottom) {
 
-        position: absolute;
+        position: $position;
         font-size: 1.5em;
         right: $right;
         bottom: $bottom;
@@ -22,18 +22,25 @@
         background-clip: text;
         -webkit-background-clip: text;
         transition: all ease-in-out 0.7s;
+        cursor: pointer;
         
         &:hover {
         opacity: 100%;
         transform: scale(1.08);
         }
 }
-@mixin fa-regular ($right, $bottom) {
+@mixin fa-regular ($position, $right, $bottom) {
 
         font-size: 1.5em;
         opacity: 100%;
-        position: absolute;
+        position: $position;
         right: $right;
         bottom: $bottom;
         transition: all ease-in-out 0.2s;
+        cursor: pointer;
+}
+@mixin text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
