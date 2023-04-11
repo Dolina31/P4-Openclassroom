@@ -52,7 +52,7 @@
     } 
 }
 .fonctionnement__btn__container {
-    @include flex-position(null, flex-start, center);
+    @include flex-position (null, flex-start, center);
     @include btn-form;
     box-shadow: 0px 4px 3px 2px rgb(235, 231, 231);
     width: 90%;
@@ -135,10 +135,7 @@
             padding-bottom: 5px;
         }
 
-        p {
-            font-weight: 300;
-
-        }
+        
 
         .restaurants__card__new {
             font-size: 1em;
@@ -153,21 +150,28 @@
             top: 15px;
         }
 
-        .restaurants__card__container {
+        .restaurants__card__container__position {
+            @include flex-position (null, space-between, null);
             color: black;
             padding: 15px;
             position: relative;
+
+            p {
+                font-weight: 300;
+                width: 80%;
+            }
         }
 }
 
 .restaurants__card__container__icon {
+    @include flex-position (null, null , center);
     
     .fa-solid {
-        @include fa-solid (absolute, 25px, 30px)
+        @include fa-solid (-51%)
     }
     
     .fa-regular {
-        @include fa-regular (absolute, 25px, 30px)
+        @include fa-regular;
     }
 }
         

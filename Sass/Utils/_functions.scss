@@ -1,7 +1,7 @@
 @for $button-number from 1 through 12 {
     .fade-in-#{$button-number}{
         opacity: 0;
-        animation: fade-in 0.9s #{nth($btn-delays, $button-number)} forwards ease-in-out;
+        animation: fade-in 0.7s #{nth($btn-delays, $button-number)}  ease-in-out forwards;
     }
 }
 
