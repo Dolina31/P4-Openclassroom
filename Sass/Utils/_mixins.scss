@@ -10,27 +10,38 @@
     padding: 30px;
     background-color: var(--bg-color-clear);
 }
-@mixin fa-solid ($margin-right) {
+@mixin fa-solid ($position, $right, $bottom) {
 
-        font-size: 1.5em;
-        margin-right: $margin-right;
-        opacity: 0;
-        color: transparent;
-        background-image: linear-gradient(0deg, rgba(255,121,218,1) 10%, rgba(165,110,232,1) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        transition: all ease-in-out 0.4s;
-        
-        &:hover {
+    position: $position;
+    font-size: 1.5em;
+    right: $right;
+    bottom: $bottom;
+    opacity: 0;
+    color: transparent;
+    background-image: linear-gradient(0deg, rgba(255,121,218,1) 10%, rgba(165,110,232,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all ease-in-out 0.7s;
+    cursor: pointer;
+    
+    &:hover {
         opacity: 100%;
         transform: scale(1.08);
-        }
+    }
 }
-@mixin fa-regular {
+@mixin fa-regular ($position, $right, $bottom) {
 
-        font-size: 1.5em;
-        opacity: 100%;
-        transition: all ease-in-out 0.2s;
+    font-size: 1.5em;
+    opacity: 100%;
+    position: $position;
+    right: $right;
+    bottom: $bottom;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0;
+    }
 }
 @mixin text-ellipsis {
     white-space: nowrap;

@@ -54,13 +54,14 @@
        
     } 
     .Title-and-like {
-        @include flex-position (null, space-between, center);
+        @include flex-position (row, null, center);
+        position: relative;
 
             .fa-solid {
-                @include fa-solid (50px);
+                @include fa-solid (absolute, 5%, 4px);
             }
             .fa-regular {
-                @include fa-regular;
+                @include fa-regular (absolute, 5%, 4px);
             }
     }
 }
@@ -200,11 +201,15 @@
         margin-top: -55px;
 
         .Title-and-like {
-            @include flex-position (null, center, center);
-            gap: 20px;
+            @include flex-position (row, center, center);
+            gap: 30px;
+            position: static;
 
-           .fa-solid {
-            @include fa-solid (-49px)
+            .fa-solid {
+                @include fa-solid (absolute, 5%, 4px);
+            }
+            .fa-regular {
+                @include fa-regular (static,null, null);
             }
         }
     }

@@ -164,14 +164,13 @@
 }
 
 .restaurants__card__container__icon {
-    @include flex-position (null, null , center);
     
     .fa-solid {
-        @include fa-solid (-51%)
+        @include fa-solid (absolute, 25px, 30px)
     }
     
     .fa-regular {
-        @include fa-regular;
+        @include fa-regular (absolute, 25px, 30px)
     }
 }
         
