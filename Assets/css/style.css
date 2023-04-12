@@ -9,7 +9,7 @@
 
 .fade-in-1 {
   opacity: 0;
-  animation: fade-in 0.9s 0.1s forwards ease-in-out;
+  animation: fade-in 0.9s 0.2s forwards ease-in-out;
 }
 
 .fade-in-2 {
@@ -19,52 +19,57 @@
 
 .fade-in-3 {
   opacity: 0;
-  animation: fade-in 0.9s 0.7s forwards ease-in-out;
+  animation: fade-in 0.9s 0.6s forwards ease-in-out;
 }
 
 .fade-in-4 {
   opacity: 0;
-  animation: fade-in 0.9s 0.9s forwards ease-in-out;
+  animation: fade-in 0.9s 0.8s forwards ease-in-out;
 }
 
 .fade-in-5 {
   opacity: 0;
-  animation: fade-in 0.9s 1.1s forwards ease-in-out;
+  animation: fade-in 0.9s 1s forwards ease-in-out;
 }
 
 .fade-in-6 {
   opacity: 0;
-  animation: fade-in 0.9s 1.4s forwards ease-in-out;
+  animation: fade-in 0.9s 1.2s forwards ease-in-out;
 }
 
 .fade-in-7 {
   opacity: 0;
-  animation: fade-in 0.9s 1.7s forwards ease-in-out;
+  animation: fade-in 0.9s 1.4s forwards ease-in-out;
 }
 
 .fade-in-8 {
   opacity: 0;
-  animation: fade-in 0.9s 1.9s forwards ease-in-out;
+  animation: fade-in 0.9s 1.6s forwards ease-in-out;
 }
 
 .fade-in-9 {
   opacity: 0;
-  animation: fade-in 0.9s 2.1s forwards ease-in-out;
+  animation: fade-in 0.9s 1.8s forwards ease-in-out;
 }
 
 .fade-in-10 {
   opacity: 0;
-  animation: fade-in 0.9s 2.4s forwards ease-in-out;
+  animation: fade-in 0.9s 2s forwards ease-in-out;
 }
 
 .fade-in-11 {
   opacity: 0;
-  animation: fade-in 0.9s 2.7s forwards ease-in-out;
+  animation: fade-in 0.9s 2.2s forwards ease-in-out;
 }
 
 .fade-in-12 {
   opacity: 0;
-  animation: fade-in 0.9s 2.9s forwards ease-in-out;
+  animation: fade-in 0.9s 2.4s forwards ease-in-out;
+}
+
+.fade-in-13 {
+  opacity: 0;
+  animation: fade-in 0.9s 2.6s forwards ease-in-out;
 }
 
 .line-1 {
@@ -272,7 +277,7 @@ footer p {
 .background h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
-  font-size: 1.4em;
+  font-size: 1.35em;
   padding-left: 20px;
 }
 .background h2 {
@@ -283,6 +288,7 @@ footer p {
   padding-top: 30px;
   border-bottom: 3px solid var(--tertiary-color);
   width: 50px;
+  margin-top: 25px;
 }
 .background .Title-and-like {
   display: flex;
@@ -300,7 +306,7 @@ footer p {
   background-image: linear-gradient(0deg, rgb(255, 121, 218) 10%, rgb(165, 110, 232) 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all ease-in-out 0.7s;
+  transition: all ease-in-out 0.4s;
   cursor: pointer;
 }
 .background .Title-and-like .fa-solid:hover {
@@ -347,6 +353,7 @@ footer p {
   text-align: start;
 }
 .menu__btn .menu__btn__position h3 {
+  width: 85%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -380,7 +387,7 @@ footer p {
   font-weight: 700;
 }
 .menu__btn .menu__btn__price-position {
-  width: 100%;
+  width: 98%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -393,7 +400,7 @@ footer p {
   width: 80px;
   background-color: var(--tertiary-color);
   border-radius: 0px 20px 20px 0px;
-  margin-right: -4em;
+  margin-right: -4.5em;
   transition: margin-right 0.5s ease-out;
 }
 .menu__btn .icon__check i {
@@ -451,31 +458,14 @@ footer p {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    position: static;
   }
   .background .Title-and-like .fa-solid {
-    position: absolute;
-    font-size: 1.5em;
-    right: 5%;
-    bottom: 4px;
-    opacity: 0;
-    color: transparent;
-    background-image: linear-gradient(0deg, rgb(255, 121, 218) 10%, rgb(165, 110, 232) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    transition: all ease-in-out 0.7s;
-    cursor: pointer;
-  }
-  .background .Title-and-like .fa-solid:hover {
-    opacity: 100%;
-    transform: scale(1.08);
+    right: 0;
+    bottom: 0;
   }
   .background .Title-and-like .fa-regular {
-    font-size: 1.5em;
-    opacity: 100%;
-    position: static;
-    transition: all ease-in-out 0.2s;
-    cursor: pointer;
+    right: 0;
+    bottom: 0;
   }
 }
 .header__location {
@@ -651,7 +641,7 @@ footer p {
   background-image: linear-gradient(0deg, rgb(255, 121, 218) 10%, rgb(165, 110, 232) 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  transition: all ease-in-out 0.7s;
+  transition: all ease-in-out 0.4s;
   cursor: pointer;
 }
 .restaurants__card__container__icon .fa-solid:hover {

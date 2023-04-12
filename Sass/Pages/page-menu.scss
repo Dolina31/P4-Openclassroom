@@ -39,7 +39,7 @@
     h1 {
         font-family:'Shrikhand', cursive;
         font-weight: 500;
-        font-size: 1.4em;
+        font-size: 1.35em;
         padding-left: 20px;
     }
 
@@ -51,7 +51,8 @@
         padding-top: 30px;
         border-bottom: 3px solid var(--tertiary-color);
         width: 50px;
-       
+        margin-top: 25px;
+        
     } 
     .Title-and-like {
         @include flex-position (row, null, center);
@@ -94,7 +95,7 @@
         text-align: start ;
 
         h3 {
-
+            width: 85%;
             @include text-ellipsis;
             font-size: 1.06em;
         }
@@ -130,7 +131,7 @@
     }
 
     .menu__btn__price-position {
-        width: 100%;
+        width: 98%;
         @include flex-position (null, space-between, center);
     }
     
@@ -140,7 +141,7 @@
         width: 80px;
         background-color: var(--tertiary-color);
         border-radius: 0px 20px 20px 0px;
-        margin-right: -4em;
+        margin-right: -4.5em;
         transition: margin-right 0.5s ease-out;
     
         i {
@@ -206,13 +207,15 @@
         .Title-and-like {
             @include flex-position (row, center, center);
             gap: 30px;
-            position: static;
+            position: null;
 
             .fa-solid {
-                @include fa-solid (absolute, 5%, 4px);
+                right: 0;
+                bottom: 0;
             }
             .fa-regular {
-                @include fa-regular (static,null, null);
+                right: 0;
+                bottom: 0;
             }
         }
     }
