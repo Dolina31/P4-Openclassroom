@@ -39,7 +39,7 @@
     h1 {
         font-family:'Shrikhand', cursive;
         font-weight: 500;
-        font-size: 1.4em;
+        font-size: 1.35em;
         padding-left: 20px;
     }
 
@@ -51,7 +51,8 @@
         padding-top: 30px;
         border-bottom: 3px solid var(--tertiary-color);
         width: 50px;
-       
+        margin-top: 25px;
+        
     } 
     .Title-and-like {
         @include flex-position (row, null, center);
@@ -203,13 +204,15 @@
         .Title-and-like {
             @include flex-position (row, center, center);
             gap: 30px;
-            position: static;
+            position: null;
 
             .fa-solid {
-                @include fa-solid (absolute, 5%, 4px);
+                right: 0;
+                bottom: 0;
             }
             .fa-regular {
-                @include fa-regular (static,null, null);
+                right: 0;
+                bottom: 0;
             }
         }
     }

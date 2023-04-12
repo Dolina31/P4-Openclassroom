@@ -3,5 +3,4 @@ ACCUEIL :
 
 PAGE MENU :
 - placer correctement le coeur en mode desktop
-- l'apparition des bouton ne se fait pas correctement
 - Chercher pourquoi la police d'écriture dans les boutons en font-weight 300 n'a pas la même apparence que celle de l'accueil
