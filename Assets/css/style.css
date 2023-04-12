@@ -9,11 +9,7 @@
 
 .fade-in-1 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 0s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 0.2s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .fade-in-2 {
@@ -23,97 +19,57 @@
 
 .fade-in-3 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 0.6s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 0.6s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .fade-in-4 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 0.9s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 0.8s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .fade-in-5 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 1s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 1s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .fade-in-6 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 1.3s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 1.2s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .fade-in-7 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 1.6s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 1.4s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .fade-in-8 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 1.9s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 1.6s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .fade-in-9 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 2s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 1.8s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .fade-in-10 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 2.3s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 2s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .fade-in-11 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 2.6s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 2.2s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .fade-in-12 {
   opacity: 0;
-<<<<<<< HEAD
-  animation: fade-in 0.7s 2.9s ease-in-out forwards;
-=======
   animation: fade-in 0.9s 2.4s forwards ease-in-out;
 }
 
 .fade-in-13 {
   opacity: 0;
   animation: fade-in 0.9s 2.6s forwards ease-in-out;
->>>>>>> ajout-menu
 }
 
 .line-1 {
