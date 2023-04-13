@@ -1,6 +1,0 @@
-ACCUEIL :
-- Regler le problème avec l'import de font awesome qui crée une erreur w3c
-
-PAGE MENU :
-- placer correctement le coeur en mode desktop
-- Chercher pourquoi la police d'écriture dans les boutons en font-weight 300 n'a pas la même apparence que celle de l'accueil

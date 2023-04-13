@@ -55,16 +55,22 @@
         
     } 
     .Title-and-like {
-        @include flex-position (row, null, center);
-        position: relative;
+        @include flex-position (row, space-between, center);
+        
+        .menu__heart-icon__position {
+            position: relative;
 
             .fa-solid {
-                @include fa-solid (absolute, 5%, 4px);
+                @include fa-solid (absolute, 50%, null);
             }
+
             .fa-regular {
-                @include fa-regular (absolute, 5%, 4px);
+                @include fa-regular (relative, 50%, null);
             }
+        }
     }
+
+        
 }
 .btn-position {
     @include flex-position (column, null, center);            
@@ -105,6 +111,7 @@
             @include text-ellipsis;
             width: 85%;
             font-size: 1em;
+            font-weight: 300;
         }
         
         &:hover > .icon__check {
