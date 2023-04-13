@@ -323,7 +323,7 @@ footer p {
   transition: all ease-in-out 0.2s;
   cursor: pointer;
 }
-.background .Title-and-like .fa-regular:hover {
+.background .Title-and-like .menu__heart-icon__position .fa-regular:hover {
   opacity: 0;
 }
 
