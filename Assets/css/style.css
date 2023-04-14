@@ -425,8 +425,8 @@ footer p {
     opacity: 0;
   }
   100% {
-    opacity: 1;
     margin-top: 0;
+    opacity: 1;
   }
 }
 @keyframes icon-fade-in-turn {
@@ -615,6 +615,9 @@ footer p {
   font-size: 1.1em;
   padding-bottom: 5px;
 }
+.restaurants__card p {
+  font-weight: 300;
+}
 .restaurants__card .restaurants__card__new {
   font-size: 1em;
   font-weight: 500;
@@ -627,16 +630,10 @@ footer p {
   right: 15px;
   top: 15px;
 }
-.restaurants__card .restaurants__card__container__position {
-  display: flex;
-  justify-content: space-between;
+.restaurants__card .restaurants__card__container {
   color: black;
   padding: 15px;
   position: relative;
-}
-.restaurants__card .restaurants__card__container__position p {
-  font-weight: 300;
-  width: 80%;
 }
 
 .restaurants__card__container__icon .fa-solid {

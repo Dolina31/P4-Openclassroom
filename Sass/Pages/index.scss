@@ -52,7 +52,7 @@
     } 
 }
 .fonctionnement__btn__container {
-    @include flex-position (null, flex-start, center);
+    @include flex-position(null, flex-start, center);
     @include btn-form;
     box-shadow: 0px 4px 3px 2px rgb(235, 231, 231);
     width: 90%;
@@ -135,7 +135,10 @@
             padding-bottom: 5px;
         }
 
-        
+        p {
+            font-weight: 300;
+
+        }
 
         .restaurants__card__new {
             font-size: 1em;
@@ -150,16 +153,10 @@
             top: 15px;
         }
 
-        .restaurants__card__container__position {
-            @include flex-position (null, space-between, null);
+        .restaurants__card__container {
             color: black;
             padding: 15px;
             position: relative;
-
-            p {
-                font-weight: 300;
-                width: 80%;
-            }
         }
 }
 
